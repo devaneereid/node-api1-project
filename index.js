@@ -65,4 +65,12 @@ server.delete('/api/users/:id', (req, res) => {
             res.status(404).json({ message: "The user with the specified ID does not exist." })
         }
     })
-})
+});
+
+// PUT Request 
+
+
+
+
+const port = 5000;
+server.listen(port, () => console.log(`\n API running on port ${port} \n`))
